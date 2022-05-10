@@ -21,11 +21,10 @@ const ItemCard = ({ onCardClick, onEditClick, disableView, ...props }) => {
             View
           </Button>
         )}
-        <LinkContainer to="/update-item">
-          <Button variant="outline-primary" onClick={onEditClick}>
-            Edit
-          </Button>
-        </LinkContainer>
+
+        <Button variant="outline-primary" onClick={onEditClick}>
+          Edit
+        </Button>
       </Card.Body>
     </Card>
   );

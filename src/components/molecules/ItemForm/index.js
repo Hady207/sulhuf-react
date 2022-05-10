@@ -3,11 +3,11 @@ import { Form, Button, Spinner } from "react-bootstrap";
 import { TextInput } from "../../atoms";
 
 const ItemForm = ({ isLoading, editForm, onSubmit }) => {
-  const [name, setName] = useState(editForm.name || "");
-  const [brand, setBrand] = useState(editForm.brand || "");
-  const [pharmacySKU, setPharmacySKU] = useState(editForm.pharmacySKU || "");
-  const [size, setSize] = useState(editForm.size || "");
-  const [upc, setUPC] = useState(editForm.UPC || "");
+  const [name, setName] = useState(editForm?.name || "");
+  const [brand, setBrand] = useState(editForm?.brand || "");
+  const [pharmacySKU, setPharmacySKU] = useState(editForm?.pharmacySKU || "");
+  const [size, setSize] = useState(editForm?.size || "");
+  const [upc, setUPC] = useState(editForm?.UPC || "");
 
   const handleOnSubmit = (e) => {
     onSubmit(e, {
